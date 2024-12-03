@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Selamat Ulang Tahun</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fef6e4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .card {
+            background: #fff;
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            padding: 20px;
+            max-width: 400px;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #ff4500;
+        }
+        p {
+            font-size: 18px;
+        }
+        button {
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #e03e00;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Selamat Ulang Tahun!</h1>
+        <p>Semoga hari ini penuh dengan kebahagiaan, berkah, dan cinta. Semoga semua impianmu tercapai!</p>
+        <button onclick="playMusic()">Klik untuk pesan spesial</button>
+        <p id="extra-message" style="display: none; margin-top: 20px;">Kamu adalah seseorang yang luar biasa! Selamat merayakan hari istimewa ini. 🎉</p>
+        <audio id="birthday-song" src="Happy Birthday to You - piano instrumental with lyrics - Kaleb Brasee (youtube).mp3"></audio>
+    </div>
+
+    <script>
+        function playMusic() {
+            const message = document.getElementById('extra-message');
+            const audio = document.getElementById('birthday-song');
+
+            message.style.display = 'block';
+            audio.play();
+        }
+    </script>
+</body>
+</html>
